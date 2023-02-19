@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+ <form method="post">
+<div class="row">
+    <div class="col-md-6">
+        <h4>Ask me a question: </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <textarea id="gptQuestion" name="question" class="form-control" style="height: 100px"></textarea>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-3">
+        <input type="submit" class="btn btn-primary" asp-page-handler="Submit" id="gptButton" value="Ask me" />
+    </div>
+</div>
+<div class="row" style="margin-top: 50px">
+    <div class="col-md-6">
+        <h4>And I will answer: </h4>
+    </div>
+     <div class="col-md-6">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <textarea id="gptResult" disabled class="form-control" style="height: 300px">@Model.Answer</textarea>
+    </div>
+</div>
+    </form>

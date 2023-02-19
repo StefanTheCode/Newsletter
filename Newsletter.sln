@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReference", "1# - NullableReference\NullableReference.csproj", "{B3277BAA-5EEC-4D30-96DB-AF0436574995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTIntegration", "2# - ChatGPT with C#\ChatGPTIntegration\ChatGPTIntegration.csproj", "{4E2BC02E-18F1-4FC1-B708-FA63821D33EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatGPTIntegration", "2# - ChatGPT with C#\ChatGPTIntegration.csproj", "{3B594D00-792E-4536-BCC7-672CBFEBEA34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B3277BAA-5EEC-4D30-96DB-AF0436574995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3277BAA-5EEC-4D30-96DB-AF0436574995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3277BAA-5EEC-4D30-96DB-AF0436574995}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E2BC02E-18F1-4FC1-B708-FA63821D33EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E2BC02E-18F1-4FC1-B708-FA63821D33EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E2BC02E-18F1-4FC1-B708-FA63821D33EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E2BC02E-18F1-4FC1-B708-FA63821D33EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
