@@ -21,11 +21,11 @@ namespace ChatGPTIntegration.Pages
         public void OnPostSubmit(string question)
         {
             //Please use your OpenAIAPI. This one is deleted.
-            var openAi = new OpenAIAPI("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");
+            var openAIAPI = new OpenAIAPI("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");
 
-            var completions = openAi.Completions.CreateCompletionAsync(
+            var completions = openAIAPI.Completions.CreateCompletionAsync(
                 prompt: question,
-                model: "text-davinci-002",
+                model: "text-davinci-003",
                 max_tokens: 100,
                 temperature: 0.5f
                 );
