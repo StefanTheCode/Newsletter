@@ -23,6 +23,10 @@ namespace ChatGPTIntegration.Pages
             //Please use your OpenAIAPI. This one is deleted.
             var openAIAPI = new OpenAIAPI("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");
 
+            string text = "This is some text.";
+
+            string formattedText = text.ToProperCase();
+
             var completions = openAIAPI.Completions.CreateCompletionAsync(
                 prompt: question,
                 model: "text-davinci-003",

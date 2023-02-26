@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReference", "1# - N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatGPTIntegration", "2# - ChatGPT with C#\ChatGPTIntegration.csproj", "{3B594D00-792E-4536-BCC7-672CBFEBEA34}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mappers", "3# - Mappers\Mappers.csproj", "{FB11BD86-8343-49D2-AA4C-732A4EC37BAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B594D00-792E-4536-BCC7-672CBFEBEA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB11BD86-8343-49D2-AA4C-732A4EC37BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB11BD86-8343-49D2-AA4C-732A4EC37BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB11BD86-8343-49D2-AA4C-732A4EC37BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB11BD86-8343-49D2-AA4C-732A4EC37BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
