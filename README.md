@@ -8,4 +8,4 @@
 ### Follow me on Linkedin: https://www.linkedin.com/in/djokic-stefan/
 
 
-Thanks to [@boubkhaled](https://github.com/boubkhaled)) for contributing and creating a readme for each Newsletter!
+Thanks to [@boubkhaled](https://github.com/boubkhaled) for contributing and creating a readme for each Newsletter!
