@@ -1,5 +1,3 @@
-[Stefan Đokić](https://stefandjokic.tech/blog/how-and-why-i-create-my-own-mapper.html)
-
 ## #3 Stefan's Newsletter
 
 ## How and why I create my own mapper (avoid Automapper)?
