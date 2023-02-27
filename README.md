@@ -6,3 +6,6 @@
 ## Become a .NET Pro with my newsletter
 ### Subscribe here: https://stefandjokic.tech/
 ### Follow me on Linkedin: https://www.linkedin.com/in/djokic-stefan/
+
+
+Thanks to @boubkhaled for contributing and creating a readme for each Newsletter!
