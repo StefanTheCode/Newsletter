@@ -19,7 +19,17 @@ var user = new User
 
 List<User> users = new List<User> { user };
 
+var dsa = users.TakeLast(4);
 
+Test test = new Test();
+test.Users = null;
+
+var test2 = test?.Users?.Any();
+
+var test1 = test?.Users?.Any() == true;
+
+
+var p = 10;
 
 //#1 Approach - Reflection
 
