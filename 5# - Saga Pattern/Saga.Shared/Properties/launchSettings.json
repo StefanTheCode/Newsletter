@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Saga.Shared": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55626;http://localhost:55627"
+    }
+  }
+}
