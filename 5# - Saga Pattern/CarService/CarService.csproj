@@ -12,9 +12,4 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FlightService.Application\FlightService.Application.csproj" />
-    <ProjectReference Include="..\FlightService.Infrastructure\FlightService.Infrastructure.csproj" />
-  </ItemGroup>
-
 </Project>

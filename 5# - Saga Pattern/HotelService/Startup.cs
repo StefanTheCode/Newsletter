@@ -1,9 +1,14 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using HotelService.Application.Common;
 using HotelService.Application.Common.Models;
 using HotelService.Application.Services.BookingService.Command;
+using HotelService.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +29,10 @@ namespace HotelService
         //TO DO: Separate those in methods
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<HotelDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
+            services.AddScoped(typeof(IHotelDbContext), typeof(HotelDbContext));
 
             services.AddSagaCore(Configuration);
 

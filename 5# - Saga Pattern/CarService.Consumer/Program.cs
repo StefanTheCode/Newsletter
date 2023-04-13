@@ -1,14 +1,14 @@
 ﻿using System;
-using HotelService.Consumer.Consumer;
+using CarSevice.Consumer.Consumer;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Saga.Core.Concrete.Brokers;
 using Saga.Core.MessageBrokers.Concrete;
-using Saga.Shared.Consumers.Models.Booking;
+using Saga.Shared.Consumers.Models.Car;
 
-namespace HotelService.Consumer
+namespace CarService.Consumer
 {
     class Program
     {
@@ -38,23 +38,20 @@ namespace HotelService.Consumer
                     var bus = BusConfiguration.Instance
                             .ConfigureBus(massTransitSettings, (cfg) =>
                             {
-                                cfg.ReceiveEndpoint(nameof(BookHotelReceivedEvent), e =>
+                                cfg.ReceiveEndpoint(nameof(ReserveCarCommand), e =>
                                 {
-                                    e.Consumer(() => new BookHotelReceivedConsumer());
+                                    e.Consumer(() => new ReserveCarConsumer());
                                 });
-                                cfg.ReceiveEndpoint(nameof(HotelBookedEvent), e =>
+
+                                cfg.ReceiveEndpoint(nameof(RollbackCarCommand), e =>
                                 {
-                                    e.Consumer(() => new HotelBookedConsumer());
-                                });
-                                cfg.ReceiveEndpoint(nameof(BookingFailedEvent), e =>
-                                {
-                                    e.Consumer(() => new BookingFailedConsumer());
+                                    e.Consumer(() => new RollbackCarConsumer());
                                 });
                             });
 
                     bus.StartAsync();
 
-                    Console.WriteLine("Hotel Booking Consumer Application started...");
+                    Console.WriteLine("Car Booking Consumer Application started...");
                     Console.ReadLine();
                 });
         }

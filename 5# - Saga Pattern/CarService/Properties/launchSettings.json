@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:35120",
-      "sslPort": 44350
+      "applicationUrl": "http://localhost:15610",
+      "sslPort": 44382
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "FlightService": {
+    "CarService": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

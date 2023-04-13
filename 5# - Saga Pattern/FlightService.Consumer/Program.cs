@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Saga.Core.Concrete.Brokers;
 using Saga.Core.MessageBrokers.Concrete;
+using Saga.Shared.Consumers.Models.Car;
 using Saga.Shared.Consumers.Models.Flight;
 
 namespace FlightService.Consumer
@@ -42,6 +43,11 @@ namespace FlightService.Consumer
                                 {
                                     e.Consumer(() => new ReserveFlightConsumer());
                                 });
+
+                                cfg.ReceiveEndpoint(nameof(RollbackFlightCommand), e =>
+                                {
+                                    e.Consumer(() => new RollbackFlightConsumer());
+                                });;
                             });
 
                     bus.StartAsync();
