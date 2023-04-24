@@ -1,6 +1,6 @@
 ﻿using InterfaceSegragation;
 
-Console.WriteLine("Interface Segregation Principle");
+Console.WriteLine("I - Interface Segregation Principle");
 
 List<object> workers = new()
 {

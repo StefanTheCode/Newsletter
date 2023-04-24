@@ -1,6 +1,6 @@
 ﻿using LiskovSubstitution;
 
-Console.WriteLine("Liskov Substitution Principle");
+Console.WriteLine("L - Liskov Substitution Principle");
 
 List<Bird> birds = new()
 {

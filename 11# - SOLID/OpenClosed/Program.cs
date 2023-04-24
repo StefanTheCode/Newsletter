@@ -1,7 +1,7 @@
 ﻿using OpenClosed.Abstraction;
 using OpenClosed;
 
-Console.WriteLine("Open-Closed Principle");
+Console.WriteLine("O - Open-Closed Principle");
 
 List<IPersistence> persistenceMethods = new()
 {
